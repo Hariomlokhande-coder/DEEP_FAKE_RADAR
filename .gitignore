@@ -13,8 +13,6 @@ _pycache_/
 
 # Data and models if too large for GitHub
 data/
-*.h5
-*.keras
 *.npy
 *.wav
 *.mp4
