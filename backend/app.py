@@ -19,8 +19,8 @@ CORS(app)
 # Base directory for absolute paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-AUDIO_MODEL_PATH = os.path.join(BASE_DIR, "backend", "audio_model_final.keras")
-VIDEO_MODEL_PATH = os.path.join(BASE_DIR, "backend", "video_deepfake_model_final.h5")
+AUDIO_MODEL_PATH = os.path.join(BASE_DIR,"audio_model_final.keras")
+VIDEO_MODEL_PATH = os.path.join(BASE_DIR,"video_deepfake_model_final.h5")
 
 SAMPLE_RATE = 22050
 N_MFCC = 40
