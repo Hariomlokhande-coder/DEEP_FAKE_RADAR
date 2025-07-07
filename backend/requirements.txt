@@ -5,7 +5,7 @@ scikit-learn
 requests
 flask
 flask-cors
-opencv-python
+opencv-python-headless
 pydub
 tqdm
 gunicorn
