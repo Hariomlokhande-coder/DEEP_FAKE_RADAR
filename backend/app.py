@@ -15,8 +15,12 @@ CORS(app)
 
 # ==============================================
 # Constants
-AUDIO_MODEL_PATH = "audio_model_final.keras"
-VIDEO_MODEL_PATH = "video_deepfake_model_final.h5"
+
+# Base directory for absolute paths
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+AUDIO_MODEL_PATH = os.path.join(BASE_DIR, "backend", "audio_model_final.keras")
+VIDEO_MODEL_PATH = os.path.join(BASE_DIR, "backend", "video_deepfake_model_final.h5")
 
 SAMPLE_RATE = 22050
 N_MFCC = 40
@@ -26,6 +30,10 @@ MAX_PAD_LEN = 174
 # Load models
 print("🔄 Loading models...")
 try:
+    print("Current Working Directory:", os.getcwd())
+    print("Loading audio model from:", AUDIO_MODEL_PATH)
+    print("Loading video model from:", VIDEO_MODEL_PATH)
+
     audio_model = tf.keras.models.load_model(AUDIO_MODEL_PATH)
     video_model = tf.keras.models.load_model(VIDEO_MODEL_PATH)
 
