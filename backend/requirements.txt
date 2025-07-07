@@ -2,7 +2,6 @@ tensorflow
 librosa
 numpy
 scikit-learn
-pip freeze
 requests
 flask
 flask-cors
