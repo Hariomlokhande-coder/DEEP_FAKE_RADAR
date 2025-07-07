@@ -1,0 +1,21 @@
+# Python virtual environments
+.venv/
+backend/venv/
+
+# Node modules
+node_modules/
+
+# Python cache
+_pycache_/
+
+# Environment variables
+.env
+
+# Data and models if too large for GitHub
+data/
+*.h5
+*.keras
+*.npy
+*.wav
+*.mp4
+*.log
