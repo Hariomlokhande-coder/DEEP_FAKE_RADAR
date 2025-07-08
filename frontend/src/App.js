@@ -407,7 +407,10 @@ function App() {
     setConfidence("")
 
     try {
-      const endpoint = `http://127.0.0.1:5000/predict/${type}`
+      const isLocal = window.location.hostname === "localhost";
+      const endpoint = isLocal
+        ? `http://127.0.0.1:5000/predict/${type}`
+        : `https://stellar-upliftment-production-3034.up.railway.app/predict/${type}`;
       const response = await axios.post(endpoint, formData, {
         headers: { "Content-Type": "multipart/form-data" },
         timeout: 60000,
