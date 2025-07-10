@@ -87,6 +87,32 @@ For training scripts, refer to:
   train_audio_model.py
   train_video_model.py
 -------------------------------------------------------------------------------------------------------------------------------------------
+Deployment for Hackathon Demo
+
+This project is currently deployed for demonstration:
+	•	🔗 Frontend (Vercel): https://deep-fake-radar-hdkbg2oaz-hariomlokhande3456-5422s-projects.vercel.app
+	•	🔗 Backend (Railway): https://stellar-upliftment-production-3034.up.railway.app
+
+⚠ Important Note for Judges & Reviewers
+
+Audio deepfake detection is fully functional in the deployed app.
+
+⚠ Video detection endpoint may not work on deployment due to:
+	•	High memory and processing requirements of video model inference.
+	•	Limitations of free hosting (RAM, timeout).
+
+Video detection works perfectly in local execution.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+📝 Instructions for Video Detection Testing
+
+If the backend video API is not responding:
+	1.	Clone the repository.
+	2.	Follow the provided local setup instructions in the README.
+	3.	Run python app.py to start the backend locally.
+	4.	Open the frontend locally and test video detection.
+-------------------------------------------------------------------------------------------------------------------------------------------
 Future Improvements---
  	
   Enable real-time audio and video stream detection.
